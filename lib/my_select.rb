@@ -5,7 +5,7 @@ def my_select(collection)
  if counter == collection.length 
    return select_collection
  else
-   where counter < collection.length
+   while counter < collection.length
      if yield(collection[counter]) == true
        select_collection.push(collection[counter]) 
      end
@@ -13,4 +13,4 @@ def my_select(collection)
    end 
    return select_collection
  end
-
+end
