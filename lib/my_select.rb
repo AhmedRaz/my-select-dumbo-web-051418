@@ -7,7 +7,10 @@ def my_select(collection)
  else
    where counter < collection.length 
      select_collection.push(collection[counter]) if yield(collection[counter]) == true  
+     counter += 1 
    end 
-   
+   return select_collection
+ else
+   return nil 
  end
 end
