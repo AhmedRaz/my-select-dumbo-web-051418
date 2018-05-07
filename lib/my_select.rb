@@ -10,7 +10,5 @@ def my_select(collection)
      counter += 1 
    end 
    return select_collection
- else
-   return nil 
  end
 end
